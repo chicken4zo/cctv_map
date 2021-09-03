@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>서울 안심 지도</title>
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="css/bootstrap.css">
+</head>
+<body>
+<header class="bg-dark py-5">
+    <div class="container px-5">
+        <div class="title">
+        <h1 class="text-white">서울 안심 지도</h1>
+            <p><mark>주소를 눌러 실제 위치를 확인해 보세요!</mark></p>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                구별 보기
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">강남구</a>
+                <a class="dropdown-item" href="#">강동구</a>
+                <a class="dropdown-item" href="#">광진구</a>
+                <a class="dropdown-item" href="#">서초구</a>
+                <a class="dropdown-item" href="#">중랑구</a>
+            </div>
+        </div>
+        </div>
+        <div class="map_wrap">
+            <div id="map"></div>
+        </div>
+    </div>
+</header>
+
+<section class="py-5" id="features">
+    <div class="container px-5 my-5">
+        <table class="table table-light">
+            <thead>
+            <tr>
+                <th scope="col" width="70%">안심 주소</th>
+                <th scope="col" width="10%">CCTV 대수</th>
+                <th scope="col" width="20%">CCTV 용도</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</section>
+</body>
+<script src="js/bootstrap.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+<script
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=92e1522c98317cc35ea563f44eb1d098&libraries=services,clusterer"></script>
+<script src="js/main.js"></script>
+</html>
